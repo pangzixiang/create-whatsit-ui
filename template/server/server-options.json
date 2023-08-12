@@ -1,0 +1,10 @@
+{
+  "serviceName": "whatsit-frontend-template",
+  "servicePort": 0,
+  "serviceHost": "localhost",
+  "serviceSsl" : false,
+  "gatewayListenerHost" : "localhost",
+  "gatewayListenerPort" : 9090,
+  "gatewayListenerSsl" : false,
+  "gatewayConnectorInstanceNum" : 4
+}

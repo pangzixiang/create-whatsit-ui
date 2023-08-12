@@ -1,0 +1,33 @@
+{
+  "name": "create-whatsit-ui",
+  "version": "1.0.1",
+  "type": "module",
+  "license": "MIT",
+  "author": "pangzixiang",
+  "bin": {
+    "create-whatsit-ui": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub && node index.js",
+    "build": "unbuild",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/prompts": "^2.4.4",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "unbuild": "^1.2.1"
+  }
+}
