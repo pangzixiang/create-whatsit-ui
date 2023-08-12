@@ -1,9 +1,13 @@
 {
   "name": "create-whatsit-ui",
+  "description": "Tool to easily create whatsit-ui project",
   "version": "1.0.1",
   "type": "module",
   "license": "MIT",
   "author": "pangzixiang",
+  "keywords": [
+    "whatsit-ui"
+  ],
   "bin": {
     "create-whatsit-ui": "index.js"
   },
@@ -29,5 +33,14 @@
     "minimist": "^1.2.8",
     "prompts": "^2.4.2",
     "unbuild": "^1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pangzixiang/create-whatsit-ui"
+  },
+  "homepage": "https://github.com/pangzixiang/create-whatsit-ui",
+  "bugs": {
+    "url": "https://github.com/pangzixiang/create-whatsit-ui/issues",
+    "email": "313227220@qq.com"
   }
 }

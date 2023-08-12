@@ -104,12 +104,19 @@ async function init() {
         fs.readFileSync(path.join(templateDir, `./server/package.json`), 'utf-8'),
     )
 
+    const serverOptions = JSON.parse(
+        fs.readFileSync(path.join(templateDir, `./server/server-options.json`), 'utf-8'),
+    )
+
     pkg.name = packageName || getProjectName()
     serverPkg.name = pkg.name + '-backend'
+    serverOptions.serviceName = pkg.name
 
     write('package.json', JSON.stringify(pkg, null, 2) + '\n')
 
     write('./server/package.json', JSON.stringify(serverPkg, null, 2) + '\n')
+
+    write('./server/server-options.json', JSON.stringify(serverOptions, null, 2) + '\n')
 
     const cdProjectName = path.relative(cwd, root)
     console.log(`\nDone. Now run:\n`)
