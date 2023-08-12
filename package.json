@@ -1,7 +1,7 @@
 {
   "name": "create-whatsit-ui",
   "description": "Tool to easily create whatsit-ui project",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "license": "MIT",
   "author": "pangzixiang",
